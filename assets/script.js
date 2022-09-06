@@ -29,6 +29,19 @@ showQuestionSection();
 
 });
 
+function endGame(){
+
+    // end game
+    // show the end game page
+    sectionEndGame.classList.remove('hide');
+  
+    // stop the timer
+    stopTimer()
+    // hide the question section
+    sectionQuestion.classList.add('hide');
+  
+  }
+
 function startTimer(){
 
     timerId = setInterval(function(){
@@ -56,39 +69,48 @@ function showQuestion(index){
     questionTitle.textContent = question.title;
 }
 
-/ Landing Page:
-    // When the start game button is clicked:
-        // Hide the landing page
-        // Show the question section
-        // Start the timer on question page
-// Question Page:
-    // Timer should have already started
-    // When the user clicks on one of the question choices
-        // Check if the if the choice is correct or not
-            // If correct, display correct feedback, move on to next Q
-            // If incorrect, display incorrect feedback
-                // Deduct 10 sec from remaining time
-                // if after deducting the time, time remaining <=0
-                    // end game
-                // if time remains positive
-                    // move on to next question
-            // If user clicks on a choice in the last Q
-                // end game
-// Endgame Function:
-    // Hide Question Page, show Endgame section
-    // Stop the timer
-    // Show the save initials and save score functions
-// End Game Section:
-    // If the user clicks on submit button without entering anything
-        // display alert, tell user to type in an input
-    // If the user types in something and clicks submit
-        // store the user high score & initial in local storage
-        // show the high score page, hide the end game page
-// High Score Page:
-    // Show all the previous high scores
-    // get the data from local storage
-    // when user clicks back to home
-        // redirect user to landing page
+function showQuestionSection(){
+    //hide the landing page
+    sectionLanding.classList.add('hide');
+    //show the question section
+    sectionQuestion.classList.remove('hide');
+
+    //once we are int he question section, start the timer
+    startTimer();
+
+}
+
+showQuestion(0)
+
+//!! TO DO !!
+
+//When the question is presented and the user clicks on it check if the choice is correct or not.
+
+
+//if correct - display correct feedback and move to the next question
+
+
+//if incorrect - display the wrong feedback & deduct 10secs from the time
+
+
+//if after deducting the time, and the remaining time becomes negative  then --end game.
+
+//if time left is positive - move on to the next question. 
+
+//if the user clicks on a choice in the last question, then end game. 
+
+//user can type in their name and click submit
+//store the name and high score in local storage
+//hide the end game page
+//show the high score page
+
+//highscore page - show all the previous high scores
+//grab the datafrom localstorage
+
+//when a user clicks "back to home" -- refresh the page
+
+
+
 
 
 

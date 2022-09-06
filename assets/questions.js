@@ -1,17 +1,17 @@
 const questions = [
     {
-      title: "Is the sky blue",
+      title: "How many legs does a spider have?",
       choices: [
         {
-          title: "Yes",
+          title: "Eight",
           isCorrect: true,
         },
         {
-          title: "No",
+          title: "Six",
           isCorrect: false,
         },
         {
-          title: "Not during a sunset",
+          title: "Four",
           isCorrect: false,
         },
       ]
@@ -21,31 +21,31 @@ const questions = [
       choices: [
         {
           title: "Parmi",
-          isCorrect: true,
+          isCorrect: false,
         },
         {
           title: "Parma",
           isCorrect: false,
         },
         {
-          title: "WTF is that",
-          isCorrect: false,
+          title: "Who cares",
+          isCorrect: true,
         },
       ]
     },
     {
-      title: "What is the fastest insect on the planet?",
+      title: "What is the color of an emerald?",
       choices: [
         {
-          title: "drangonfly",
+          title: "Green",
           isCorrect: true,
         },
         {
-          title: "mosquito",
+          title: "Red",
           isCorrect: false,
         },
         {
-          title: "Fly",
+          title: "Gold",
           isCorrect: false,
         },
       ]
